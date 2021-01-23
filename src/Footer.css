@@ -1,0 +1,9 @@
+footer
+{
+    clear: both;
+    position: fixed;
+    background-color: blueviolet;
+    height:15%;
+    color:red;
+    bottom: 0;
+}

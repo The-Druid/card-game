@@ -1,0 +1,9 @@
+header {
+  background-color: rosybrown;
+    position: absolute;
+    background-color: blueviolet;
+    height:15%;
+    color:red;
+    top: 0;
+    margin-bottom: auto;
+}

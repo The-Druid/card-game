@@ -1,0 +1,11 @@
+.resultinfo {
+  background-color: rosybrown;
+    position: absolute;
+    margin:auto;
+    text-align: center;
+    background-color: blueviolet;
+    height:15%;
+    color:red;
+    top: 0;
+    margin-bottom: auto;
+}

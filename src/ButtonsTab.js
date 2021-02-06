@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-  
-  
-    
+
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -17,11 +15,9 @@ const Button = styled.button`
   color: ${props => props.type === 'down' ? 'black' : 'white'};
   background-color: ${props => (props.type === 'down' ? '#CC00CC' : '#00CC00')};
   cursor: pointer;
-  
 `;
 
 const ButtonsTab = ({onButtonClick}) => (
-  
   <ButtonWrapper>
     <Button type="down" onClick={onButtonClick} name="down">
       Lower 

@@ -49,13 +49,17 @@ const CardGameBoard = () => {
   }
 
   return (
-    <div id="game" class="position-relative">
+    <div id="game" class="position-relative text-light bg-success">
+    
       <img src={cardImageUrl} alt="This is your card"/>
       <ButtonsTab onButtonClick={onButtonClick} />
+      <hr></hr>
       {result && 
         <ResultInfo result={result} />
       }
+      
     </div>
+    
   )
 }
 

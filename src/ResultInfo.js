@@ -11,6 +11,7 @@ const ResultInfo = ({result}) => {
     Points+=-1;
    return (
     <p>{resultLabel}: {Points}</p>
+    
   )
   }
 }

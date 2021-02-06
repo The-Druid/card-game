@@ -16,6 +16,7 @@ const MainFooter = styled.footer`
 `;
 const Footer = ({footP}) => {
     return (
+      
       <MainFooter>
     19113: {footP}
   </MainFooter>

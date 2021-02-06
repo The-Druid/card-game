@@ -29,19 +29,21 @@ const CardGameBoard = () => {
   const onButtonClick = async (e) => {
     const bet = e.target.name;
     const {image, value: newCardValue} = await drawCardFromDeck(deckId)
+    
 
 
     setCardImageUrl(image)
     console.log(newCardValue, cardValue)
     const result = compareValues({
-      bet,
       currentCardValue: newCardValue,
       previousCardValue: cardValue
     })
-
+    const xd=result;
+    document.getElementById('punkty').innerHTML=xd;
     setCardValue(newCardValue)
     setResult(result)
     console.log(result)
+    
   }
 
   if(!cardImageUrl) {
@@ -52,12 +54,14 @@ const CardGameBoard = () => {
     <div id="game" class="position-relative">
       <img src={cardImageUrl} alt="This is your card"/>
       <ButtonsTab onButtonClick={onButtonClick} />
+      
       {result && 
         <ResultInfo result={result} />
+        
       }
     </div>
   )
 }
 
-
+const resName= (`document.getElementById('wynik').innerHTML`);
 export default CardGameBoard;
